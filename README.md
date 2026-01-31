@@ -150,7 +150,12 @@ See `packages/core/src/plugins/examples/` for plugin examples.
 
 ## 🤝 Contributing
 
-Contributions welcome! Please read our contributing guidelines.
+Contributions welcome! Please read our [contributing guidelines](./CONTRIBUTING.md).
+
+## 👥 Contributors
+
+- **eternal-labs** - Project maintainer
+- **Claude (Anthropic)** - AI model provider and development assistant
 
 ## 📜 License
 
