@@ -35,7 +35,8 @@ export class AnthropicProvider implements ModelProvider {
     });
 
     if (!response.ok) {
-      throw new Error(`Anthropic API error: ${response.statusText}`);
+      const errorText = await response.text().catch(() => response.statusText);
+      throw new Error(`Anthropic API error: ${response.status} ${errorText}`);
     }
 
     const data = await response.json();
