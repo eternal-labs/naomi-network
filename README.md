@@ -152,6 +152,8 @@ See `packages/core/src/plugins/examples/` for plugin examples.
 
 Contributions welcome! Please read our [contributing guidelines](./CONTRIBUTING.md).
 
+We welcome contributions from the community. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
 ## 👥 Contributors
 
 - **eternal-labs** - Project maintainer
