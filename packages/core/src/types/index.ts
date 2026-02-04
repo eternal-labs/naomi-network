@@ -46,6 +46,9 @@ export interface AgentResponse {
   metadata?: Record<string, any>;
 }
 
+// Forward declaration to avoid circular dependency
+export type Agent = import('../agent/Agent').Agent;
+
 export interface Plugin {
   name: string;
   version: string;

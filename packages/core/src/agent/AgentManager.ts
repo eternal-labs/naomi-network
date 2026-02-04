@@ -3,9 +3,9 @@
  */
 
 import { EventEmitter } from 'eventemitter3';
-import { Agent, AgentConfig } from './Agent';
+import { Agent } from './Agent';
+import { AgentConfig, AgentState } from '../types';
 import { ContextNetwork } from '../context/ContextNetwork';
-import { AgentState } from '../types';
 
 export class AgentManager extends EventEmitter {
   private agents: Map<string, Agent> = new Map();
