@@ -2,6 +2,10 @@
  * Example: Naomi Agent participating in Colosseum Agent Hackathon
  */
 
+// Load environment variables from .env file
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 import { AgentManager } from '../packages/core/src/agent/AgentManager';
 import { AnthropicProvider } from '../packages/core/src/providers/ModelProvider';
 import { ColosseumHackathonPlugin } from '../packages/core/src/plugins/ColosseumHackathonPlugin';
