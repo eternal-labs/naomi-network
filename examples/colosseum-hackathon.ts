@@ -2,7 +2,8 @@
  * Example: Naomi Agent participating in Colosseum Agent Hackathon
  */
 
-import { AgentManager, AnthropicProvider } from '@naomi/core';
+import { AgentManager } from '../packages/core/src/agent/AgentManager';
+import { AnthropicProvider } from '../packages/core/src/providers/ModelProvider';
 import { ColosseumHackathonPlugin } from '../packages/core/src/plugins/ColosseumHackathonPlugin';
 
 async function main() {

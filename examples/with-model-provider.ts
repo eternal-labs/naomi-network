@@ -2,7 +2,8 @@
  * Example: Using Claude with agents
  */
 
-import { AgentManager, AnthropicProvider } from '@naomi/core';
+import { AgentManager } from '../packages/core/src/agent/AgentManager';
+import { AnthropicProvider } from '../packages/core/src/providers/ModelProvider';
 
 async function main() {
   const manager = new AgentManager();
