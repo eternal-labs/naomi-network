@@ -10,6 +10,7 @@ Naomi is an open-source framework for building and deploying AI agent networks w
 * 🔗 **Connected Context**: Agents share context and knowledge across the network
 * 🧠 **Powered by Claude**: Built exclusively with Anthropic's Claude models
 * 🔌 **Extensible Plugins**: Build custom functionality with a powerful plugin system
+* 🏆 **Hackathon Ready**: Built-in Colosseum Agent Hackathon integration ($100k prize pool)
 * 🖥️ **Web Dashboard**: Modern UI for managing agents and monitoring context flow
 * 📡 **Real-time Communication**: Agents communicate and share context in real-time
 * 📄 **Document Ingestion**: RAG capabilities for knowledge retrieval
@@ -101,6 +102,7 @@ naomi network:topology
 
 - [Getting Started Guide](./docs/GETTING_STARTED.md)
 - [GitHub Setup Guide](./docs/GITHUB_SETUP.md) - Setting up Claude on GitHub
+- [Colosseum Hackathon](./docs/COLOSSEUM_HACKATHON.md) - Join the $100k Agent Hackathon
 - [Architecture Overview](./ARCHITECTURE.md)
 - [Examples](./examples/)
 
