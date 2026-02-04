@@ -47,7 +47,7 @@ async function main() {
   try {
     const registration = await hackathonPlugin.execute(naomi, {
       action: 'register',
-      name: 'naomi-agent-network'
+      name: `naomi-agent-network-${Date.now()}` // Use unique name
     });
     
     console.log('✅ Registered successfully!');

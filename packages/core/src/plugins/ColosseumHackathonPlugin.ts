@@ -83,7 +83,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Registration failed: ${response.statusText}`);
     }
 
-    const data = await response.json();
+    const data = await response.json() as any;
     this.config.apiKey = data.apiKey;
     this.config.agentName = data.agent.name;
     this.config.claimCode = data.claimCode;
@@ -112,7 +112,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to get status: ${response.statusText}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async createProject(project: any): Promise<any> {
@@ -134,7 +134,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to create project: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async updateProject(project: any): Promise<any> {
@@ -156,7 +156,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to update project: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async submitProject(): Promise<any> {
@@ -174,7 +174,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to submit project: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async getMyProject(): Promise<any> {
@@ -190,7 +190,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to get project: ${response.statusText}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async createForumPost(post: { title: string; body: string; tags?: string[] }): Promise<any> {
@@ -212,7 +212,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to create post: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async listForumPosts(options: { sort?: string; limit?: number; tags?: string[] } = {}): Promise<any> {
@@ -229,7 +229,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to list posts: ${response.statusText}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async commentOnPost(postId: number, body: string): Promise<any> {
@@ -251,7 +251,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to comment: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async voteOnProject(projectId: number, value: number = 1): Promise<any> {
@@ -273,7 +273,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to vote: ${error}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async getLeaderboard(): Promise<any> {
@@ -283,7 +283,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
       throw new Error(`Failed to get leaderboard: ${response.statusText}`);
     }
 
-    return await response.json();
+    return await response.json() as any;
   }
 
   private async getHeartbeat(): Promise<any> {
