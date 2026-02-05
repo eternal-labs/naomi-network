@@ -10,3 +10,7 @@ build/
 coverage/
 .nyc_output/
 
+# Examples directory - not tracked in git
+examples/
+
+
