@@ -1,7 +1,3 @@
-/**
- * Core Agent class - Represents an AI agent in the network
- */
-
 import { EventEmitter } from 'eventemitter3';
 import {
   AgentConfig,
@@ -67,14 +63,10 @@ export class Agent extends EventEmitter {
   async process(input: string, metadata?: Record<string, any>): Promise<AgentResponse> {
     this.state.lastActivity = Date.now();
 
-    // Get relevant context from network
     const context = this.contextNetwork.getAgentContext(this.config.id, 50);
     const contextSummary = this.summarizeContext(context);
-
-    // Build prompt with context
     const prompt = this.buildPrompt(input, contextSummary);
 
-    // Generate response using model provider
     let content = '';
     if (this.modelProvider) {
       content = await this.modelProvider.generate(prompt, {
@@ -82,11 +74,9 @@ export class Agent extends EventEmitter {
         maxTokens: this.config.maxTokens || 1000
       });
     } else {
-      // Fallback response if no model provider
       content = `[Agent ${this.config.name}] I received: ${input}`;
     }
 
-    // Create context message
     const contextMessage: ContextMessage = {
       id: `msg_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       agentId: this.config.id,
@@ -99,7 +89,6 @@ export class Agent extends EventEmitter {
       contextType: 'message'
     };
 
-    // Share context with connected agents
     const response: AgentResponse = {
       content,
       contextUpdates: [contextMessage],
@@ -250,4 +239,5 @@ Response:`;
     this.emit('agent:shutdown', this.config.id);
   }
 }
+
 

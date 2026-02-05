@@ -1,12 +1,5 @@
-/**
- * Claude (Anthropic) Model Provider
- */
-
 import { ModelProvider } from '../types';
 
-/**
- * Anthropic Claude Model Provider
- */
 export class AnthropicProvider implements ModelProvider {
   name = 'anthropic';
   private apiKey: string;

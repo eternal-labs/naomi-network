@@ -1,7 +1,3 @@
-/**
- * Context Network - Manages shared context between agents
- */
-
 import { EventEmitter } from 'eventemitter3';
 import { ContextMessage, ContextNetwork as IContextNetwork } from '../types';
 
@@ -169,4 +165,5 @@ export class ContextNetwork extends EventEmitter {
     return Array.from(this.network.keys());
   }
 }
+
 

@@ -1,7 +1,3 @@
-/**
- * Naomi Core - Main exports
- */
-
 export * from './types';
 export * from './agent/Agent';
 export * from './agent/AgentManager';

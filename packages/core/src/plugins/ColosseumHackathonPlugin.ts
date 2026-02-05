@@ -1,8 +1,3 @@
-/**
- * Colosseum Agent Hackathon Plugin
- * Enables Naomi agents to participate in the Colosseum Agent Hackathon
- */
-
 import { BasePlugin } from './BasePlugin';
 import { Agent } from '../agent/Agent';
 
@@ -20,7 +15,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
   private config: HackathonConfig = {};
 
   async initialize(agent: Agent): Promise<void> {
-    console.log(`Colosseum Hackathon plugin initialized for agent ${agent.config.id}`);
+    // Initialized
   }
 
   async execute(agent: Agent, input: any): Promise<any> {
@@ -90,6 +85,7 @@ export class ColosseumHackathonPlugin extends BasePlugin {
 
     return {
       success: true,
+      apiKey: data.apiKey, // Include at top level for easy access
       agent: data.agent,
       claimCode: data.claimCode,
       claimUrl: data.claimUrl,

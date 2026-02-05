@@ -15,7 +15,7 @@ Naomi is an open-source framework for building and deploying AI agent networks w
 * 📡 **Real-time Communication**: Agents communicate and share context in real-time
 * 📄 **Document Ingestion**: RAG capabilities for knowledge retrieval
 
-> 💡 **Claude Support**: Full integration with Anthropic's Claude models. See [Quick Start: Claude](./QUICK_START_CLAUDE.md) for setup.
+> 💡 **Claude Support**: Full integration with Anthropic's Claude models. See [Documentation](./DOCUMENTATION.md) for setup.
 
 ## 🏗️ Architecture
 
@@ -41,7 +41,7 @@ Naomi is an open-source framework for building and deploying AI agent networks w
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd naomillm
+cd naomi-network
 
 # Install dependencies
 npm install
@@ -100,11 +100,8 @@ naomi network:topology
 
 ## 📚 Documentation
 
-- [Getting Started Guide](./docs/GETTING_STARTED.md)
-- [GitHub Setup Guide](./docs/GITHUB_SETUP.md) - Setting up Claude on GitHub
-- [Colosseum Hackathon](./docs/COLOSSEUM_HACKATHON.md) - Join the $100k Agent Hackathon
-- [Architecture Overview](./ARCHITECTURE.md)
-- [Examples](./examples/)
+- **[Full Documentation](./DOCUMENTATION.md)** - Complete guide to Naomi
+- [Examples](./examples/) - Code examples and tutorials
 
 ## 🔑 API Keys & GitHub Setup
 
@@ -119,7 +116,7 @@ ANTHROPIC_API_KEY=your_claude_key_here
 
 1. Go to **Settings** → **Secrets and variables** → **Actions**
 2. Add `ANTHROPIC_API_KEY` as a repository secret
-3. See [GitHub Setup Guide](./docs/GITHUB_SETUP.md) for details
+3. See [Documentation](./DOCUMENTATION.md) for details
 
 **Note**: Never commit API keys to the repository. Use GitHub Secrets for CI/CD.
 

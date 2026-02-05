@@ -1,7 +1,3 @@
-/**
- * Agent Manager - Manages all agents in the network
- */
-
 import { EventEmitter } from 'eventemitter3';
 import { Agent } from './Agent';
 import { AgentConfig, AgentState } from '../types';

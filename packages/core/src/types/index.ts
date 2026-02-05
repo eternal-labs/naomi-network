@@ -1,7 +1,3 @@
-/**
- * Core types for Naomi Agent Network
- */
-
 export interface AgentConfig {
   id: string;
   name: string;
